@@ -6,7 +6,7 @@ html:has(.toggleMenu:checked) {
   transition: all 0.4s linear;
 }
 .menu {
-  transition: all 0.5s linear;
+  transition: all 0.2s linear;
 }
 .menu > ul,
 .menu > div {
@@ -29,5 +29,5 @@ html:has(.toggleMenu:checked) {
 .toggleMenu:checked ~ .menu > div {
   opacity: 1;
   scale: 1;
-  transition: all 0.5s ease-in-out 0.5s;
+  transition: all 0.5s ease-in-out 0.3s;
 }
