@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Blinker:wght@100;200;300;400;600;700;800;900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import "tailwindcss";
+html {
+  font-size: 10px;
+}
+.hero {
+  background: url("./assets/Hero-Background.jpg") -0 -0 no-repeat;
+  background-size: cover;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+.toggle:checked + div {
+  height: unset;
+  padding-block: 3rem 6rem;
+  opacity: 1;
+  transition: all 0.5s linear, opacity 1s ease 0.1s !important;
+}
+.toggle + div {
+  transition: all 0.4s linear !important;
+}
+.pop {
+  animation: popout 1.5s ease-in both;
+  animation-iteration-count: 1;
+  animation-timeline: view();
+  transform-style: preserve-3d;
+  animation-range: entry 50% cover 50%;
+  /* background: url("./assets/signupbg.svg"); */
+  transform: scale(0);
+}
+.mask {
+  -webkit-mask-image: url("./assets/passwordeye.svg");
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  -webkit-mask-position: center;
+  mask-image: url("./assets/passwordeye.svg");
+  mask-repeat: no-repeat;
+  mask-size: contain;
+  mask-position: center;
+}
+@keyframes popout {
+  to {
+    transform: scale(1);
+  }
+}
+.ss::-webkit-scrollbar {
+  display: none;
+}
+/* MYYY */
+@media screen and (max-height: 800px) {
+  .ss {
+    scale: 0.9;
+  }
+}
+@media screen and (max-height: 700px) {
+  .ss {
+    scale: 0.8;
+  }
+}
+@media screen and (max-height: 600px) {
+  .ss {
+    scale: 0.7;
+  }
+  .ls {
+    scale: 0.9;
+  }
+}
+/*  */
+@media screen and (max-width: 768px) {
+  .hero {
+    background: url("./assets/Hero-Background.jpg") center/cover no-repeat;
+  }
+}

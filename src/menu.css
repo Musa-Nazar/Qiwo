@@ -1,0 +1,33 @@
+html:has(.toggleMenu:checked) {
+  overflow: hidden;
+}
+.hamburger,
+.hamburger > div {
+  transition: all 0.4s linear;
+}
+.menu {
+  transition: all 0.5s linear;
+}
+.menu > ul,
+.menu > div {
+  transition: all 0.2s ease-in-out;
+}
+.toggleMenu:checked + .hamburger > div {
+  transform: rotate(135deg) scale(0.8);
+}
+.toggleMenu:checked + .hamburger > div::before,
+.toggleMenu:checked + .hamburger > div::after {
+  transform: rotate(90deg);
+  top: 0;
+}
+.toggleMenu:checked ~ .menu {
+  visibility: visible;
+  translate: 0;
+  opacity: 1;
+}
+.toggleMenu:checked ~ .menu > ul,
+.toggleMenu:checked ~ .menu > div {
+  opacity: 1;
+  scale: 1;
+  transition: all 0.5s ease-in-out 0.5s;
+}
