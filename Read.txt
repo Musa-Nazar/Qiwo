@@ -1,17 +1,17 @@
-/* Client Review */
+/* Sandra James Kaduna State */
 
 position: absolute;
-width: 164px;
-height: 53px;
-left: calc(50% - 164px/2 + 0.5px);
-top: 12px;
+width: 128px;
+height: 33px;
+left: 70px;
+top: 149px;
 
-font-family: 'Poppins';
+font-family: 'Inter';
 font-style: normal;
 font-weight: 600;
-font-size: 24px;
-line-height: 90px;
-/* or 375% */
+font-size: 13px;
+line-height: 17px;
+/* or 131% */
 
-color: #0F0E0E;
+color: #1A1919;
 
