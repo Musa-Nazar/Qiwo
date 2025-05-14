@@ -8,17 +8,20 @@ function Testimonial() {
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
     const card = document.getElementsByClassName("cards")[0];
+    const card1 = document.getElementsByClassName("cards")[1];
+    const card2 = document.getElementsByClassName("cards")[2];
     const scroll = document.getElementsByClassName("myscroll")[0];
-    scroll.addEventListener("scroll", () => {
+    scroll.addEventListener("scrollend", () => {
+      const spacing = card.clientWidth + 22;
       if (scroll.scrollLeft === 0) {
         setCurrentSlide(0);
-      } else if (scroll.scrollLeft === card.clientWidth + 22) {
+      } else if (scroll.scrollLeft === spacing) {
         setCurrentSlide(1);
-      } else if (scroll.scrollLeft === card.clientWidth * 2 + 44) {
+      } else if (scroll.scrollLeft === spacing * 2) {
         setCurrentSlide(2);
       }
     });
-  }, []);
+  }, [currentSlide]);
   const xml = (
     <div className="bg-[#EFEEEE] py-[7.4rem_4.5rem] px-[1rem] max-lg:py-[4.1rem] relative">
       <h1 className="mb-[5rem] font-[Poppins] font-semibold text-[4rem] leading-[9rem] text-[#0F0E0E] text-center max-lg:text-[2.4rem] max-lg:leading-[2.4rem] max-lg:mb-[3rem]">
