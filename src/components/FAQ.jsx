@@ -3,7 +3,7 @@ import FAQTiles from "./FAQTiles";
 function FAQ() {
   const xml = (
     <>
-      <h2 className="text-center font-[Poppins] font-semibold text-[4rem] leading-[9rem] mb-[3rem] max-lg:text-[2.4rem] max-lg:leading-[3rem] max-lg:text-center max-lg:text-[#0F0E0E] max-lg:mb-[1rem] max-lg:pt-[3.4rem]">
+      <h2 className="text-center font-[Poppins] font-semibold text-[4rem] leading-[9rem] mb-[3rem] pt-[6.4rem] max-lg:text-[2.4rem] max-lg:leading-[3rem] max-lg:text-center max-lg:text-[#0F0E0E] max-lg:mb-[1rem] max-lg:pt-[3.4rem]">
         <span className="max-lg:hidden">Frequently Asked Questions</span>
         <span className="hidden max-lg:inline mt-[7.6rem]">
           Frequently Asked <br /> Questions

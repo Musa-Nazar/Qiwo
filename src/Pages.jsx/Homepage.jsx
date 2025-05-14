@@ -13,7 +13,6 @@ function Homepage() {
       <About />
       <HIW />
       <OurDevices />
-      <Preview />
       <Testimonial />
       <FAQ />
     </>

@@ -1,21 +1,17 @@
- /* Client Reviews */
+/* Client Review */
 
 position: absolute;
-width: 295px;
-height: 90px;
-left: calc(50% - 295px/2 - 76.5px);
-top: 3276px;
+width: 164px;
+height: 53px;
+left: calc(50% - 164px/2 + 0.5px);
+top: 12px;
 
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
-font-size: 40px;
+font-size: 24px;
 line-height: 90px;
-/* identical to box height, or 225% */
+/* or 375% */
 
 color: #0F0E0E;
-
-
-
-
 

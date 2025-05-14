@@ -7,6 +7,7 @@ html {
   background: url("./assets/Hero-Background.jpg") -0 -0 no-repeat;
   background-size: cover;
 }
+.hide-scrollbar::-webkit-scrollbar,
 body::-webkit-scrollbar {
   display: none;
 }
@@ -46,6 +47,7 @@ body::-webkit-scrollbar {
 .ss::-webkit-scrollbar {
   display: none;
 }
+
 /* MYYY */
 @media screen and (max-height: 800px) {
   .ss {
