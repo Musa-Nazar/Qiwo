@@ -14,7 +14,7 @@ function Testimonial() {
         setCurrentSlide(0);
       } else if (scroll.scrollLeft >= card.clientWidth + 22) {
         setCurrentSlide(1);
-      } else if (scroll.scrollLeft >= card.clientWidth * 2 + 44) {
+      } else if (scroll.scrollLeft >= card.clientWidth * 2) {
         setCurrentSlide(2);
       }
     });
