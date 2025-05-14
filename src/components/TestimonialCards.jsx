@@ -6,35 +6,35 @@ function TestimonialCards({ image, name, origin, p, starCount }) {
   }
   const stars = starsArray.map((item, index) => {
     return (
-      <div key={index}>
-        <img src={star} alt="" className="block w-[3rem] aspect-square" />
+      <div key={index} className="">
+        <img src={star} alt="" className="block w-[2rem] aspect-square" />
       </div>
     );
   });
 
   const xml = (
     <div
-      className={`flex py-[1.6rem] pl-[1.8rem] pr-[2rem] flex-[0_1_38.6rem] bg-[#1D4719] rounded-[0_100px] gap-[0.8rem] ${
-        parseInt(starCount) === 5 ? "scale-[1.1]" : ""
-      }`}
+      className={`flex flex-col-reverse py-[4.3rem_3.6rem] pl-[2.9rem] pr-[2rem] flex-[0_1_39.8rem] bg-white min-h-[27.3rem] justify-between`}
     >
       <div className="flex items-center flex-none">
         <img
           src={image}
           alt="testimonial"
-          className={`w-[16.4rem] h-[39rem] block`}
+          className={`w-[5.5rem] aspect-square rounded-[50%] block mr-[1.2rem]`}
         />
-      </div>
-      <div className="pt-[2.8rem] text-white">
-        <h2 className="font-[Inter] text-[1.6rem] leading-[2.6rem] mb-[2rem]">
+        <h2 className="font-[Inter] text-[1.4rem] leading-[2.3rem] text-[#1A1919]">
           {name}
           <br />
           {origin}
         </h2>
-        <p className="font-[Inter] font-[500] leading-[2.6rem]  text-[1.5rem] mb-[2rem]">
+        <div className="flex gap-2.5 ml-auto h-[5.5rem] items-end pb-[1rem]">
+          {stars}
+        </div>
+      </div>
+      <div className="text-white">
+        <p className="font-[Inter] font-[500] leading-[2.6rem] text-[#1A1919]  text-[1.5rem] mb-[2rem]">
           {p}
         </p>
-        <div className="flex gap-2.5">{stars}</div>
       </div>
     </div>
   );

@@ -1,13 +1,21 @@
-/* Frequently Asked Questions */
+ /* Client Reviews */
 
+position: absolute;
+width: 295px;
+height: 90px;
+left: calc(50% - 295px/2 - 76.5px);
+top: 3276px;
 
 font-family: 'Poppins';
 font-style: normal;
 font-weight: 600;
-font-size: 24px;
-line-height: 30px;
-/* or 125% */
-text-align: center;
+font-size: 40px;
+line-height: 90px;
+/* identical to box height, or 225% */
 
 color: #0F0E0E;
+
+
+
+
 

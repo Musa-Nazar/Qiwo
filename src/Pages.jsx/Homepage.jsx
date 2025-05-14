@@ -14,8 +14,8 @@ function Homepage() {
       <HIW />
       <OurDevices />
       <Preview />
-      <FAQ />
       <Testimonial />
+      <FAQ />
     </>
   );
   return xml;
