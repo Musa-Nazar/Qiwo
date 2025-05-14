@@ -12,9 +12,9 @@ function Testimonial() {
     scroll.addEventListener("scroll", () => {
       if (scroll.scrollLeft === 0) {
         setCurrentSlide(0);
-      } else if (scroll.scrollLeft === card.clientWidth + 22) {
+      } else if (parseInt(scroll.scrollLeft) === parseInt(card.clientWidth + 22)) {
         setCurrentSlide(1);
-      } else if (scroll.scrollLeft === card.clientWidth * 2 + 44) {
+      } else if (parseInt(scroll.scrollLeft) === parseInt(card.clientWidth * 2 + 44)) {
         setCurrentSlide(2);
       }
     });
