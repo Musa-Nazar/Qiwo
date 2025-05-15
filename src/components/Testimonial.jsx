@@ -7,15 +7,13 @@ function Testimonial() {
   const [showMore, setShowMore] = useState(false);
   const [currentSlide, setCurrentSlide] = useState(0);
   useEffect(() => {
-    const card = document.getElementsByClassName("cards")[0];
-    const card1 = document.getElementsByClassName("cards")[1];
-    const card2 = document.getElementsByClassName("cards")[2];
     const scroll = document.getElementsByClassName("myscroll")[0];
     scroll.addEventListener("scrollend", () => {
+      const card = document.getElementsByClassName("cards")[0];
       const spacing = card.clientWidth + 22;
       if (scroll.scrollLeft === 0) {
         setCurrentSlide(0);
-      } else if (scroll.scrollLeft === spacing) {
+      } else if (parseInt(scroll.scrollLeft) === parseInt(spacing)) {
         setCurrentSlide(1);
       } else if (scroll.scrollLeft === spacing * 2) {
         setCurrentSlide(2);
