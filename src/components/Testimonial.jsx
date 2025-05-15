@@ -11,7 +11,7 @@ function Testimonial() {
     const card1 = document.getElementsByClassName("cards")[1];
     const card2 = document.getElementsByClassName("cards")[2];
     const scroll = document.getElementsByClassName("myscroll")[0];
-    scroll.addEventListener("scrollend", () => {
+    scroll.addEventListener("scrollend", (e) => {
       const spacing = card.clientWidth + 22;
       if (scroll.scrollLeft === 0) {
         setCurrentSlide(0);
@@ -29,7 +29,7 @@ function Testimonial() {
       </h1>
       <div className=" w-[calc(119.4rem+4.4rem)] max-w-full mx-auto max-lg:!justify-start max-lg:w-[clamp(28.8rem,76.8vw,30.8rem)] hide-scrollbar snap-x snap-mandatory scroll-smooth max-lg:mb-0 overflow-scroll myscroll">
         <div
-          className="w-full flex max-w-full  justify-center items-center gap-[2.2rem] flex-wrap mb-[7rem] mx-auto max-lg:flex-nowrap max-lg:!justify-start max-lg:w-[99rem] max-lg:mb-0 transition-all duration-[1s]"
+          className="w-full flex max-w-full  justify-center items-center gap-[2.2rem] flex-wrap mb-[7rem] mx-auto max-lg:flex-nowrap max-lg:!justify-start max-lg:w-[99rem] max-lg:mb-0 transition-all snap-center duration-[1s]"
           id="slider"
         >
           <TestimonialCards
