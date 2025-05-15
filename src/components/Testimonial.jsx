@@ -11,7 +11,7 @@ function Testimonial() {
     const card1 = document.getElementsByClassName("cards")[1];
     const card2 = document.getElementsByClassName("cards")[2];
     const scroll = document.getElementsByClassName("myscroll")[0];
-    scroll.addEventListener("scrollend", (e) => {
+    scroll.addEventListener("scrollend", () => {
       const spacing = card.clientWidth + 22;
       if (scroll.scrollLeft === 0) {
         setCurrentSlide(0);
