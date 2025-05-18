@@ -65,7 +65,7 @@ function Navbar() {
           </span>
         </Link>
         {/* MOBILE MENU */}
-        <div className="menu-wrap hidden max-lg:block relative w-[3rem] h-[4rem]">
+        <div className="menu-wrap hidden max-lg:block relative w-[2.5rem] h-[4rem]">
           <input
             type="checkbox"
             className="toggleMenu w-full h-full block absolute top-0 left-0 z-[2] opacity-0 cursor-pointer"
