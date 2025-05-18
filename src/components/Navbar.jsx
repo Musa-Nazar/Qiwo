@@ -74,7 +74,7 @@ function Navbar() {
           <div className="hamburger flex items-center justify-center w-full h-full">
             <div className="w-full h-[0.2rem] relative rounded-[4rem] bg-black before:content-[''] before:absolute before:w-full before:h-full before:rounded-[4rem] before:top-[-0.7rem] before:bg-black after:absolute after:w-full after:h-full after:rounded-[4rem] after:top-[0.7rem] after:bg-black"></div>
           </div>
-          <div className="menu fixed w-full bg-[#EFEEEE] h-[calc(100dvh-7rem)] left-0 bottom-0 z-[2] flex flex-col items-center invisible translate-x-[100dvw] opacity-0">
+          <div className="menu fixed w-full bg-[#EFEEEE] h-[calc(100dvh-6rem)] left-0 bottom-0 z-[2] flex flex-col items-center invisible translate-x-[100dvw] opacity-0">
             <ul className=" mt-[2.5rem] text-center opacity-0 scale-0">
               <li className="mb-[2rem]">
                 <a href="#" className="text-[1.6rem] mb-[1rem] font-[Poppins]">
