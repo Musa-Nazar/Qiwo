@@ -77,7 +77,7 @@ function Navbar() {
           <div className="menu fixed w-full bg-[#EFEEEE] h-[calc(100dvh-6rem)] left-0 bottom-0 z-[2] flex flex-col items-center invisible translate-x-[100dvw] opacity-0">
             <ul className=" mt-[2.5rem] text-center opacity-0 scale-0">
               <li className="mb-[2rem]">
-                <a href="#" className="text-[1.6rem] mb-[1rem] font-[Poppins]">
+                <a href="/" className="text-[1.6rem] mb-[1rem] font-[Poppins]">
                   <label htmlFor="toggleMenu" className="cursor-pointer">
                     Home
                   </label>
