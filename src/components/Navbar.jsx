@@ -3,7 +3,7 @@ import logo from "../assets/logo.svg";
 import "../menu.css";
 function Navbar() {
   const xml = (
-    <header className="h-[10rem] bg-white flex items-center max-lg:h-[7rem] max-lg:sticky top-0 z-10">
+    <header className="h-[10rem] bg-white flex items-center max-lg:h-[6rem] max-lg:sticky top-0 z-10">
       <nav className="flex justify-between items-center w-full px-[clamp(1rem,3.263888888888889vw,4.7rem)_clamp(1rem,3.263888888888889vw,4.7rem)]">
         <Link to="/">
           <div className="w-[8rem] h-[8rem] max-lg:w-[6.7rem] max-lg:h-[4rem]">
